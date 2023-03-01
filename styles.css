@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#rock, #paper, #scissors{
+    background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 25px 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  font-size: 2.5rem;
+  margin: 3px;
+}
+
+h1{
+    color: white;
+    background-color: lightcoral;
+    width: fit-content;
+    padding: 20px;
+    border: black solid 2px;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.main-div{
+    /* color: white; */
+    width: fit-content;
+    margin: auto;
+    height: 50vh;
+    background-color: antiquewhite;
+    border: black 2px solid;
+    border-radius: 30px;
+    padding: 20px
+}
+
+.main-div div{
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 3rem;
+}
+
+#output{
+    width: 280px;
+    height: 110px;
+    background-color: lightcoral;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+    border: black 2px solid;
+    border-radius: 20px;
+}
