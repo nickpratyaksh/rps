@@ -46,11 +46,12 @@ h1{
     /* color: white; */
     width: fit-content;
     margin: auto;
-    height: 50vh;
+    height: fit-content;
     background-color: antiquewhite;
     border: black 2px solid;
     border-radius: 30px;
-    padding: 20px
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
 .main-div div{
