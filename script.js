@@ -1,58 +1,58 @@
-function ai(){
+function rpsGen(){
     randomGen = Math.random()*3
-    let aiVal
+    let botVal
     if (randomGen < 1)
-        aiVal = 0
+        botVal = 'rock'
     else if (randomGen >1 && randomGen < 2)
-        aiVal = 1
+        botVal = 'paper'
     else
-        aiVal = 2
-    return aiVal
+        botVal = 'scissors'
+    return botVal
 }
 
 document.getElementById('rock').onclick = () => {
-    let genVal = ai()
-    if (genVal == 0){
+    let genVal = rpsGen()
+    if (genVal == 'rock'){
         document.getElementById('output').innerText = "Same"
         console.log(genVal)
     }
-    else if (genVal == 1){
+    else if (genVal == 'paper'){
         document.getElementById('output').innerText = "You Lose :("
         console.log(genVal)
     }
-    else if (genVal == 2){
+    else if (genVal == 'scissors'){
         document.getElementById('output').innerText = "You Win!"
         console.log(genVal)
     }
 }
 
 document.getElementById('paper').onclick = () => {
-    let genVal = ai()
-    if (genVal == 0){
+    let genVal = rpsGen()
+    if (genVal == 'rock'){
         document.getElementById('output').innerText = "You Win!"
         console.log(genVal)
     }
-    else if (genVal == 1){
+    else if (genVal == 'paper'){
         document.getElementById('output').innerText = "Same"
         console.log(genVal)
     }
-    else if (genVal == 2){
+    else if (genVal == 'scissors'){
         document.getElementById('output').innerText = "You Lose :("
         console.log(genVal)
     }
 }
 
 document.getElementById('scissors').onclick = () => {
-    let genVal = ai()
-    if (genVal == 0){
+    let genVal = rpsGen()
+    if (genVal == 'rock'){
         document.getElementById('output').innerText = "You Lose :("
         console.log(genVal)
     }
-    else if (genVal == 1){
+    else if (genVal == 'paper'){
         document.getElementById('output').innerText = "You Win!"
         console.log(genVal)
     }
-    else if (genVal == 2){
+    else if (genVal == 'scissors'){
         document.getElementById('output').innerText = "Same"
         console.log(genVal)
     }
